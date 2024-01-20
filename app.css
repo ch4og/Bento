@@ -156,7 +156,8 @@ body {
 }
 
 #hour,
-.separator,
+#separator,
+#separator2,
 #minutes,
 #seconds {
   font-size: var(--fg-primary);
