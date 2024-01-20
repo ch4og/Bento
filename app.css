@@ -325,7 +325,12 @@ body {
   background-color: var(--accent);
   color: var(--sfg);
 }
-
+.centered-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 /* M E D I A - Q U E R I E S */
 
 @media only screen and (max-width: 68.75em) {
