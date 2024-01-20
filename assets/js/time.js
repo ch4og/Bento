@@ -11,6 +11,7 @@ function displayClock() {
 	var mm = monthNames[d.getMonth()];
 	var dd = d.getDate();
 	var min = (mins = ('0' + d.getMinutes()).slice(-2));
+	var sec = (mins = ('0' + d.getSeconds()).slice(-2));
 	var hh = d.getHours();
 	var ampm = '';
 
@@ -22,7 +23,8 @@ function displayClock() {
 
 	document.getElementById('hour').innerText = hh;
 	document.getElementById('separator').innerHTML = ' : ';
-	document.getElementById('minutes').innerText = min + ampm;
+	document.getElementById('minutes').innerText = min;
+	document.getElementById('seconds').innerText = sec + ampm;
 
 	document.getElementById('month').innerText = mm;
 	document.getElementById('day').innerText = dd;
