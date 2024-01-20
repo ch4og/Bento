@@ -22,7 +22,8 @@ function displayClock() {
 	}
 
 	document.getElementById('hour').innerText = hh;
-	document.getElementsByClassName('separator').innerHTML = ' : ';
+	document.getElementById('separator').innerHTML = ' : ';
+	document.getElementById('separator2').innerHTML = ' : ';
 	document.getElementById('minutes').innerText = min;
 	document.getElementById('seconds').innerText = sec + ampm;
 
