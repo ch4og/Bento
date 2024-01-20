@@ -22,7 +22,7 @@ function displayClock() {
 	}
 
 	document.getElementById('hour').innerText = hh;
-	document.getElementByClassName('separator').innerHTML = ' : ';
+	document.getElementsByClassName('separator').innerHTML = ' : ';
 	document.getElementById('minutes').innerText = min;
 	document.getElementById('seconds').innerText = sec + ampm;
 
