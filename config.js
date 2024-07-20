@@ -84,9 +84,9 @@ const CONFIG = {
 
 		{
 			id: '6',
-			name: 'ch4og.com',
+			name: 'ctf.ch4og.com',
 			icon: 'circle-user-round',
-			link: 'https://ch4og.com',
+			link: 'https://ctf.ch4og.com',
 		},
 	],
 
