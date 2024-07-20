@@ -23,7 +23,7 @@ const CONFIG = {
 	greetingNight: 'Good night!',
 
 	// Layout
-	bentoLayout: 'buttons', // 'bento', 'lists', 'buttons'
+	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
 
 	// Weather
 	weatherKey: 'bd5e378503939ddaee76f12ad7a97608', // Write here your API Key
@@ -31,7 +31,7 @@ const CONFIG = {
 	weatherUnit: 'C', // 'F', 'C'
 	language: 'en', // More languages in https://openweathermap.org/current#multi
 
-	trackLocation: false, // If false or an error occurs, the app will use the lat/lon below
+	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
 	defaultLatitude: '55.755825',
 	defaultLongitude: '37.617298',
 
@@ -65,9 +65,9 @@ const CONFIG = {
 		},
 		{
 			id: '3',
-			name: 'Twitter',
-			icon: 'twitter',
-			link: 'https://twitter.com',
+			name: 'Reddit',
+			icon: 'reddit',
+			link: 'https://reddit.com/',
 		},
 		{
 			id: '4',
@@ -77,23 +77,23 @@ const CONFIG = {
 		},
 		{
 			id: '5',
-			name: 'osu!',
-			icon: 'circle-dashed',
-			link: 'https://osu.ppy.sh/',
+			name: 'Y.Mail',
+			icon: 'mail',
+			link: 'https://mail.yandex.ru/',
 		},
 
 		{
 			id: '6',
-			name: 'GeoGuessr',
-			icon: 'map-pin',
-			link: 'https://geoguessr.com',
+			name: 'ch4og.com',
+			icon: 'circle-user-round',
+			link: 'https://ch4og.com',
 		},
 	],
 
 	secondButtonsContainer: [
 		{
 			id: '1',
-			name: 'Kinopoisk',
+			name: 'a.com',
 			icon: 'popcorn',
 			link: 'https://hd.kinopoisk.ru',
 		},
@@ -148,34 +148,34 @@ const CONFIG = {
 					link: 'https://tryhackme.com/hacktivities?tab=practice',
 				},
 				{
-					name: 'Oldies',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Codeby',
+					link: 'https://codeby.games/ru',
 				},
 				{
-					name: 'Rock',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'HackTheBox',
+					link: 'https://app.hackthebox.com',
 				},
 			],
 		},
 		{
-			icon: 'coffee',
+			icon: 'cloud-download',
 			id: '2',
 			links: [
 				{
-					name: 'Linkedin',
-					link: 'https://www.linkedin.com',
+					name: 'RuTracker',
+					link: 'https://rutracker.org/',
 				},
 				{
-					name: 'Dribbble',
-					link: 'https://www.dribbble.com',
+					name: 'CrackStatus',
+					link: 'https://crackstatus.net/',
 				},
 				{
-					name: 'Trello',
-					link: 'https://www.trello.com',
+					name: 'AnyBT',
+					link: 'https://anybt.eth.limo/',
 				},
 				{
-					name: 'Slack',
-					link: 'https://www.slack.com',
+					name: 'RepackMe',
+					link: 'https://repack.me/',
 				},
 			],
 		},
