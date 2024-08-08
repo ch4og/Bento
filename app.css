@@ -12,6 +12,7 @@
   /* Font Size */
   --fg-primary: 12vh; /* Time and Greetings */
   --fg-secondary: 3vh; /* Greetings and Weather widger */
+  --fg-three: 2vh; /* Greetings and Weather widger */
   --fg-date: 8vh; /* Date */
   --fg-list: 2vh; /* Links List */
   --icon: 3vh; /* Icon Size */
@@ -195,6 +196,12 @@ body {
 
 .weatherDescription p {
   font-size: var(--fg-secondary);
+  margin-left: 15px;
+  color: var(--fg);
+}
+
+.weatherCity p {
+  font-size: var(--fg-three);
   margin-left: 15px;
   color: var(--fg);
 }
