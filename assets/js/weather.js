@@ -6,7 +6,7 @@
 const iconElement = document.querySelector('.weatherIcon');
 const tempElement = document.querySelector('.weatherValue p');
 const descElement = document.querySelector('.weatherDescription p');
-
+const cityElement = document.querySelector('.weatherCity');
 const weather = {};
 weather.temperature = {
 	unit: 'celsius',
@@ -28,6 +28,7 @@ function setPosition(position) {
 	}
 	navigator.geolocation.getCurrentPosition(
 		pos => {
+			weather.real = true;
 			getWeather(pos.coords.latitude.toFixed(3), pos.coords.longitude.toFixed(3));
 		},
 		err => {
@@ -43,6 +44,7 @@ function getWeather(latitude, longitude) {
 	fetch(api)
 		.then(function(response) {
 			let data = response.json();
+			console.log(data);
 			return data;
 		})
 		.then(function(data) {
@@ -50,6 +52,7 @@ function getWeather(latitude, longitude) {
 			weather.temperature.value = tempUnit == 'C' ? celsius : (celsius * 9) / 5 + 32;
 			weather.description = data.weather[0].description;
 			weather.iconId = data.weather[0].icon;
+			weather.name = data.name;
 		})
 		.then(function() {
 			displayWeather();
@@ -59,5 +62,6 @@ function getWeather(latitude, longitude) {
 function displayWeather() {
 	iconElement.innerHTML = `<img src="assets/icons/${CONFIG.weatherIcons}/${weather.iconId}.png"/>`;
 	tempElement.innerHTML = `${weather.temperature.value.toFixed(0)}°<span class="darkfg">${tempUnit}</span>`;
-	descElement.innerHTML = weather.description;
+	descElement.innerHTML = `${weather.description}`;
+	cityElement.innerHTML = `${weather.name}`;
 }
