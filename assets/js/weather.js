@@ -33,7 +33,8 @@ function setPosition(position) {
 		err => {
 			console.error(err);
 			getWeather(CONFIG.defaultLatitude, CONFIG.defaultLongitude);
-		}
+		},
+		{timeout:3000}
 	);
 }
 
