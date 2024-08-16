@@ -64,10 +64,10 @@ const CONFIG = {
 			link: 'https://twitch.com',
 		},
 		{
-			id: '3',
-			name: 'Reddit',
-			icon: 'bot',
-			link: 'https://reddit.com/',
+			id: '6',
+			name: 'Blind typing',
+			icon: 'keyboard',
+			link: 'https://blindtyping.com/lessons',
 		},
 		{
 			id: '4',
@@ -83,10 +83,10 @@ const CONFIG = {
 		},
 
 		{
-			id: '6',
-			name: 'ctf.ch4og.com',
+			id: '3',
+			name: 'ch4og.com',
 			icon: 'circle-user-round',
-			link: 'https://ctf.ch4og.com',
+			link: 'https://ch4og.com',
 		},
 	],
 
