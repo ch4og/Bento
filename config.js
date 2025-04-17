@@ -148,8 +148,8 @@ const CONFIG = {
 					link: 'https://tryhackme.com/hacktivities?tab=practice',
 				},
 				{
-					name: 'Codeby',
-					link: 'https://codeby.games/ru',
+					name: 'HackerLab',
+					link: 'https://hackerlab.pro/',
 				},
 				{
 					name: 'HackTheBox',
