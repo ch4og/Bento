@@ -13,34 +13,34 @@ weather.temperature = {
 };
 
 var wmo_codes = new Map();
-wmo_codes.set(0, ['Clear', 'clear']);
-wmo_codes.set(1, ['Mostly Clear', 'mostly-clear']);
-wmo_codes.set(2, ['Partly Cloudy', 'partly-cloudy']);
-wmo_codes.set(3, ['Overcast', 'overcast']);
-wmo_codes.set(45, ['Fog', 'fog']);
-wmo_codes.set(48, ['Icy Fog', 'rime-fog']);
-wmo_codes.set(51, ['L.Drizzle', 'light-drizzle']);
-wmo_codes.set(53, ['Drizzle', 'moderate-drizzle']);
-wmo_codes.set(55, ['H.Drizzle', 'dense-drizzle']);
-wmo_codes.set(80, ['L.Showers', 'light-rain']);
-wmo_codes.set(81, ['Showers', 'moderate-rain']);
-wmo_codes.set(82, ['H.Showers', 'heavy-rain']);
-wmo_codes.set(61, ['L.Rain', 'light-rain']);
-wmo_codes.set(63, ['Rain', 'moderate-rain']);
-wmo_codes.set(65, ['H.Rain', 'heavy-rain']);
-wmo_codes.set(56, ['L.Icy Drizzle', 'light-freezing-drizzle']);
-wmo_codes.set(57, ['Icy Drizzle', 'dense-freezing-drizzle']);
-wmo_codes.set(66, ['L.Icy Rain', 'light-freezing-rain']);
-wmo_codes.set(67, ['Icy Rain', 'heavy-freezing-rain']);
-wmo_codes.set(77, ['Snow Grains', 'snowflake']);
-wmo_codes.set(85, ['L.Snow Showers', 'slight-snowfall']);
-wmo_codes.set(86, ['Snow Showers', 'heavy-snowfall']);
-wmo_codes.set(71, ['L.Snow', 'slight-snowfall']);
-wmo_codes.set(73, ['Snow', 'moderate-snowfall']);
-wmo_codes.set(75, ['H.Snow', 'heavy-snowfall']);
-wmo_codes.set(95, ['Thunder Storm', 'thunderstorm']);
-wmo_codes.set(96, ['T-Storm + L.Hail', 'thunderstorm-with-hail']);
-wmo_codes.set(99, ['T-Storm + Hail', 'thunderstorm-with-hail']);
+wmo_codes.set(0, ['clear', 'clear']);
+wmo_codes.set(1, ['mostly clear', 'mostly-clear']);
+wmo_codes.set(2, ['partly cloudy', 'partly-cloudy']);
+wmo_codes.set(3, ['overcast', 'overcast']);
+wmo_codes.set(45, ['fog', 'fog']);
+wmo_codes.set(48, ['icy fog', 'rime-fog']);
+wmo_codes.set(51, ['l.drizzle', 'light-drizzle']);
+wmo_codes.set(53, ['drizzle', 'moderate-drizzle']);
+wmo_codes.set(55, ['h.drizzle', 'dense-drizzle']);
+wmo_codes.set(80, ['l.showers', 'light-rain']);
+wmo_codes.set(81, ['showers', 'moderate-rain']);
+wmo_codes.set(82, ['h.showers', 'heavy-rain']);
+wmo_codes.set(61, ['l.rain', 'light-rain']);
+wmo_codes.set(63, ['rain', 'moderate-rain']);
+wmo_codes.set(65, ['h.rain', 'heavy-rain']);
+wmo_codes.set(56, ['l.icy drizzle', 'light-freezing-drizzle']);
+wmo_codes.set(57, ['icy drizzle', 'dense-freezing-drizzle']);
+wmo_codes.set(66, ['l.icy rain', 'light-freezing-rain']);
+wmo_codes.set(67, ['icy rain', 'heavy-freezing-rain']);
+wmo_codes.set(77, ['snow grains', 'snowflake']);
+wmo_codes.set(85, ['l.snow showers', 'slight-snowfall']);
+wmo_codes.set(86, ['snow showers', 'heavy-snowfall']);
+wmo_codes.set(71, ['l.snow', 'slight-snowfall']);
+wmo_codes.set(73, ['snow', 'moderate-snowfall']);
+wmo_codes.set(75, ['h.snow', 'heavy-snowfall']);
+wmo_codes.set(95, ['thunder storm', 'thunderstorm']);
+wmo_codes.set(96, ['t-storm + l.hail', 'thunderstorm-with-hail']);
+wmo_codes.set(99, ['t-storm + hail', 'thunderstorm-with-hail']);
 
 var tempUnit = CONFIG.weatherUnit;
 
@@ -58,12 +58,12 @@ function setPosition(position) {
 	}
 	navigator.geolocation.getCurrentPosition(
 		pos => {
-			weather.name = "(geo-ip)";
+			weather.name = "";
 			getWeather(pos.coords.latitude.toFixed(3), pos.coords.longitude.toFixed(3));
 		},
 		err => {
 			console.error(err);
-			weather.name = "(msk)";
+			weather.name = "msk";
 			getWeather(CONFIG.defaultLatitude, CONFIG.defaultLongitude);
 		},
 		{timeout:3000}

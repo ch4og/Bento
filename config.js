@@ -14,16 +14,16 @@ const CONFIG = {
 	name: 'ch',
 	imageBackground: true,
 	openInNewTab: true,
-	twelveHourFormat: true,
+	twelveHourFormat: false,
 
 	// Greetings
-	greetingMorning: 'Good morning!',
-	greetingAfternoon: 'Good afternoon,',
-	greetingEvening: 'Good evening,',
-	greetingNight: 'Good night!',
+	greetingMorning: 'good morning,',
+	greetingAfternoon: 'good afternoon,',
+	greetingEvening: 'good evening,',
+	greetingNight: 'good night,',
 
 	// Layout
-	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
+	bentoLayout: 'buttons', // 'bento', 'lists', 'buttons'
 
 	// Weather
 	weatherKey: '184e2f5e3b290f89d578af24b38c0be6', // Write here your API Key
@@ -53,79 +53,78 @@ const CONFIG = {
 	firstButtonsContainer: [
 		{
 			id: '1',
-			name: 'YouTube',
-			icon: 'youtube',
-			link: 'https://youtube.com/',
+			name: 'Codeberg',
+			icon: 'mountain-snow',
+			link: 'https://codeberg.org',
 		},
 		{
 			id: '2',
-			name: 'Twitch',
-			icon: 'twitch',
-			link: 'https://twitch.com',
-		},
-		{
-			id: '6',
-			name: 'Blind typing',
-			icon: 'keyboard',
-			link: 'https://blindtyping.com/lessons',
-		},
-		{
-			id: '4',
 			name: 'Github',
 			icon: 'github',
 			link: 'https://github.com/ch4og',
 		},
 		{
 			id: '5',
-			name: 'Y.Mail',
+			name: 'Mail',
 			icon: 'mail',
-			link: 'https://mail.yandex.ru/',
+			link: 'https://mail.timeweb.com',
 		},
-
 		{
 			id: '3',
-			name: 'ch4og.com',
-			icon: 'circle-user-round',
-			link: 'https://ch4og.com',
+			name: 'Guix Toys',
+			icon: 'blocks',
+			link: 'https://toys.whereis.social',
+		},
+		{
+			id: '4',
+			name: 'TimeWeb',
+			icon: 'server',
+			link: 'https://timeweb.cloud/my',
+		},
+		{
+			id: '6',
+			name: 'ChatGPT',
+			icon: 'message-circle',
+			link: 'https://chatgpt.com',
 		},
 	],
 
 	secondButtonsContainer: [
 		{
 			id: '1',
-			name: 'a.com',
-			icon: 'popcorn',
-			link: 'https://hd.kinopoisk.ru',
+			name: 'Reddit',
+			icon: 'bot',
+			link: 'https://reddit.com',
 		},
 		{
 			id: '2',
-			name: 'Google Spreadsheets',
-			icon: 'table-2',
-			link: 'https://docs.google.com/spreadsheets/',
-		},
-		{
-			id: '3',
-			name: 'timeweb',
-			icon: 'server',
-			link: 'https://timeweb.cloud/my',
-		},
-		{
-			id: '4',
-			name: 'Yandex.Mail',
-			icon: 'mail',
-			link: 'https://mail.yandex.ru/',
+			name: 'YouTube',
+			icon: 'youtube',
+			link: 'https://youtube.com/',
 		},
 		{
 			id: '5',
-			name: 'RuTracker.org',
-			icon: 'hard-drive-download',
-			link: 'https://rutracker.org/',
+			name: 'Twitch',
+			icon: 'twitch',
+			link: 'https://twitch.tv',
+		},
+		{
+			id: '3',
+			name: 'GeoGuessr',
+			icon: 'map-pin',
+			link: 'https://geoguessr.com',
+		},
+		{
+			id: '4',
+			name: 'CyberChef',
+			icon: 'chef-hat',
+			link: 'https://gchq.github.io/CyberChef',
 		},
 		{
 			id: '6',
-			name: 'repack.me',
-			icon: 'package-open',
-			link: 'https://repack.me/',
+			name: 'RuTracker.org',
+			icon: 'hard-drive-download',
+			link: 'https://rutracker.org/',
 		},
 	],
 
@@ -140,20 +139,20 @@ const CONFIG = {
 			id: '1',
 			links: [
 				{
-					name: 'CyberChef',
-					link: 'https://gchq.github.io/CyberChef/',
+					name: '',
+					link: '',
 				},
 				{
-					name: 'TryHackMe',
-					link: 'https://tryhackme.com/hacktivities?tab=practice',
+					name: '',
+					link: '',
 				},
 				{
-					name: 'HackerLab',
-					link: 'https://hackerlab.pro/',
+					name: '',
+					link: '',
 				},
 				{
-					name: 'HackTheBox',
-					link: 'https://app.hackthebox.com',
+					name: '',
+					link: '',
 				},
 			],
 		},
@@ -162,20 +161,20 @@ const CONFIG = {
 			id: '2',
 			links: [
 				{
-					name: 'RuTracker',
-					link: 'https://rutracker.org/',
+					name: '',
+					link: '',
 				},
 				{
-					name: 'CrackStatus',
-					link: 'https://crackstatus.net/',
+					name: '',
+					link: '',
 				},
 				{
-					name: 'AnyBT',
-					link: 'https://anybt.eth.limo/',
+					name: '',
+					link: '',
 				},
 				{
-					name: 'RepackMe',
-					link: 'https://repack.me/',
+					name: '',
+					link: '',
 				},
 			],
 		},
